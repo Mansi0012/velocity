@@ -1,0 +1,156 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:roboto, sans-serif,arial;
+}
+
+.header{
+    box-shadow: 8px 5px 20px 0px #0275d8;
+ }
+
+.logo-image{
+    width:150px;
+    height:100px;   
+}
+.fa-magnifying-glass:hover{
+     color:white;
+}
+.fa-heart{
+   font-size:30px;
+    /* margin-top:-30px; */
+    color: #0275d8;
+   }
+.fa-user{
+    font-size:30px;
+    margin-top:13px;
+}
+.media_1{
+    height:80px;
+}
+label{
+    display:block !important;
+}
+.drp-menu{
+    width:638px;
+}
+.login-btn{
+    font-weight:600;
+    font-size:25px;
+    letter-spacing:1.5px;
+}
+.app{
+    margin-left:5px;
+}
+.btun{
+    margin:0px 8px;
+    padding:0.1rem 6px;
+    margin-left:20px;
+    border-radius:5px;
+    background-color:red;
+    text-align:center;
+    letter-spacing:0.1rem;
+}
+.nav-item{
+    color:white;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
+
+.sr-brnd-img{
+    width:25px;
+    height:25px;
+    margin-right:10px;
+}
+
+.drp-menu{
+   
+    width:100%;
+    background:orange !important;
+    border:1px solid black !important;
+}
+.carouselExampleControls{
+    padding:5%;
+}
+.firstCard-crousel{
+    width:100%;
+}
+.card-heading{
+    margin-left:100px;
+    font-size:1.5rem;
+}
+.first-cardCrousel{
+    box-shadow: 10px 10px 10px 8px grey;
+}
+.card-heading{
+    padding-top:10px;
+}
+footer{
+    background-color:#0275d8;
+}
+.achieve{
+    color:white;
+}
+.achieve>.title{
+    font-size:22px;
+    font-weight:500px;
+    color:white;
+    line-height:27px;
+}
+footer>.second-box{
+    color:white;
+   
+}
+footer>.third-box{
+    color:white
+}
+.card{
+    background-color:rgba(103,122,137,0.2)!important;
+}
+
+@media screen and (min-width:768px){
+    /* body{
+        position:relative;
+    }
+    .row2{
+        position:fixed;
+        width:100%;
+
+    } */
+    .firstCard-crousel{
+        margin:auto;
+       width:70%;
+       margin-bottom:10px;
+    }
+   
+    
+}
+@media screen and (min-width:992px){
+ 
+    .drp-itm{
+        position:relative;
+    }
+    .drp-menu{
+        position:absolute;
+        left:100%;
+        top:0%;
+      }
+      .firstCard-crousel{
+        width:18rem;
+      }
+      .car-logo{
+    
+        margin-left:81px;
+        
+    }
+    
+}
+

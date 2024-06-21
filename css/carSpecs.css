@@ -1,0 +1,145 @@
+*
+{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+
+@keyframes slideleft {
+    0%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0%{
+        transform:translateY(-100px);
+    }
+    25%{
+        transform:translateY(-75px);
+    }
+    50%{
+        transform:translateY(-50px);
+    }
+    75%{
+        transform:translateY(-25px);
+        /* opacity:0; */
+    }
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveRight {
+    0%{
+        transform:translateX(50%);
+    }
+    25%{
+        transform:translateX(35%);
+    }
+    50%{
+        transform:translateX(25%);
+    }
+    75%{
+        transform:translateX(15%);
+        /* opacity:0; */
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+/* .first{
+ border:1px solid black;   
+} */
+.carName{
+    color: #222831;
+    letter-spacing:1.3px;
+    font-weight:700;
+}
+.priceSpan{
+    font-size:15px;
+}
+.carButton{
+    background:#F11A7B;
+    color:white;
+    font-size:25px;
+    letter-spacing:1.5px;
+    
+    
+}
+.featureContainer{
+    border:2px solid #153448;
+    border-radius:25px;
+}
+.login-btn>span{
+    color:white;
+    font-size:25px;
+    font-weight: 400;
+}
+
+
+
+
+@media screen and (min-width:768px){
+    
+    
+    .firstContainer{
+        border:0px solid black; 
+        box-shadow: 12px 10px 8px 5px grey;  
+        border-top:1.5px solid grey;
+        border-left:1.5px solid grey;
+        border-radius: 20px;
+       
+       }
+      .crouselCont{
+   animation-name: slideleft;
+   animation-duration:1s;
+       }
+       .carPriceName{
+        animation-name: slideRight;
+        animation-duration:0.5s;
+        animation-timing-function:linear;
+       }
+       .featureSlide{
+        animation-name:moveRight;
+        animation-duration:0.3s;
+        animation-timing-function:linear;
+
+       }
+    .carCarousel{
+        height:300px;
+        width:80%;
+        }
+        .carousel-inner img{
+            height:300px !important;
+        }
+        .carButton:hover{
+            background:#3B71CA;
+            color:white;
+            transform: scale(1,1.1);
+
+        }
+        .featureContainer{
+           box-shadow: 15px 10px 8px 5px #3C5B6F;
+           
+        }
+        .secondTableRow{
+            margin-top:85px;
+        }
+        table{
+            width:48%;
+        }
+}
+
+@media screen and (min-width:992px){
+    .secondTableRow{
+        margin-top:60px;
+    }
+}
